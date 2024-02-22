@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ticket de compra</h1>
+    <section class="campos-de-texto">
+        <ion-input label="Artículo" id="articulo-id"></ion-input>
+        <ion-input label="Monto" id="monto-id"></ion-input>
+    </section>
+    <ion-button onclick="sumar(); crearNuevoRegistro();">AGREGAR</ion-button>
+
+    <h2>=== Mi ticket===</h2>
+    
+    <div class="seccion-ticket" id="ticket-total">
+        Total:
+        <div id="cantidad-total"> </div>
+    </div>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
