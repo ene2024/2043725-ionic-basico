@@ -12,8 +12,6 @@ export class ListaAlumnosComponent implements OnInit {
   
   constructor(public actionSheetController: ActionSheetController) { }
   
-  ngOnInit() {}
-
   async presentActionSheet() {
     const actionSheet = await this.actionSheetController.create({
       header: 'Confirmar eliminación',
@@ -36,4 +34,6 @@ export class ListaAlumnosComponent implements OnInit {
     
     await actionSheet.present();
   }
-}
+
+  ngOnInit() {}
+} 

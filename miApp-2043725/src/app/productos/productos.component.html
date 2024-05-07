@@ -1,0 +1,12 @@
+<h2>Lista de Productos</h2>
+<ion-content>
+  <ul>
+    <li *ngFor="let producto of productos">
+      <h3>{{ producto.title }}</h3>
+      <p>Precio: {{ producto.price }}</p>
+      <p>Categoría: {{ producto.category }}</p>
+      <p>{{ producto.description }}</p>
+      <img [src]="producto.image" alt="{{ producto.title }}">
+    </li>
+  </ul>
+</ion-content>
