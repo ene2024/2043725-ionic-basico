@@ -1,12 +1,18 @@
-<h2>Lista de Productos</h2>
-<ion-content>
-  <ul>
-    <li *ngFor="let producto of productos">
-      <h3>{{ producto.title }}</h3>
-      <p>Precio: {{ producto.price }}</p>
-      <p>Categoría: {{ producto.category }}</p>
-      <p>{{ producto.description }}</p>
-      <img [src]="producto.image" alt="{{ producto.title }}">
-    </li>
-  </ul>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Lista de Productos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list lines="full">
+    <ion-item *ngFor="let producto of productos" [routerLink]="['/producto', producto.id]">
+      <ion-label class="informacion-producto">
+        <h3> {{ producto.title }} </h3>
+        <img [src]="producto.image" alt="{{ producto.title }}">
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

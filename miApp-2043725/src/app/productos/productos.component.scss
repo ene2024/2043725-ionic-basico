@@ -1,7 +1,20 @@
-ion-content {
-    height: 100vh;
+ion-title {
+    font-size: 21px;
+    font-weight: bold;
+    border-bottom: 10px;
 }
 
-li img {
-    height: 300px;
+.informacion-producto {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+img {
+    width: 300px;
+    align-self: center;
 }
