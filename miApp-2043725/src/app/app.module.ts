@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ListaAlumnosComponent } from './lista-alumnos/lista-alumnos.component';
 import { ProductosComponent } from './productos/productos.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     IonicModule.forRoot(),
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
